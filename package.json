@@ -1,11 +1,11 @@
 {
   "name": "@fortuna-wallet/core-monorepo",
   "version": "454.0.0",
-  "private": true,
+  "private": false,
   "description": "Monorepo for packages shared between MetaMask clients",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/core.git"
+    "url": "https://github.com/hammasxd/fortuna-core"
   },
   "files": [],
   "workspaces": [
