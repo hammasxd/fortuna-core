@@ -58,5 +58,7 @@ export type NetworkClientConfiguration =
  * The Chain ID representing the additional networks to be included as default.
  */
 export type AdditionalDefaultNetwork = (typeof ChainId)[
+  | 'elysium-mainnet'
+  | 'elysium-testnet'
   | 'megaeth-testnet'
   | 'monad-testnet'];

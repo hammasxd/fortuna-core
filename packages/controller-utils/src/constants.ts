@@ -50,6 +50,7 @@ export const TESTNET_TICKER_SYMBOLS = {
   LINEA_GOERLI: 'LineaETH',
   LINEA_SEPOLIA: 'LineaETH',
   MEGAETH_TESTNET: 'MegaETH',
+  ELYSIUM_TESTNET: 'ELY',
 };
 
 /**
@@ -62,6 +63,8 @@ export const BUILT_IN_CUSTOM_NETWORKS_RPC = {
   MEGAETH_TESTNET: 'https://carrot.megaeth.com/rpc',
   'megaeth-testnet': 'https://carrot.megaeth.com/rpc',
   'monad-testnet': 'https://testnet-rpc.monad.xyz',
+  'elysium-mainnet': 'https://rpc.elysiumchain.us/',
+  'elysium-testnet': 'https://rpc.atlantischain.network/',
 };
 
 /**
@@ -87,6 +90,20 @@ export const BUILT_IN_NETWORKS = {
     ticker: NetworksTicker.mainnet,
     rpcPrefs: {
       blockExplorerUrl: BlockExplorerUrl.mainnet,
+    },
+  },
+  [NetworkType['elysium-mainnet']]: {
+    chainId: ChainId['elysium-mainnet'],
+    ticker: NetworksTicker['elysium-mainnet'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['elysium-mainnet'],
+    },
+  },
+  [NetworkType['elysium-testnet']]: {
+    chainId: ChainId['elysium-testnet'],
+    ticker: NetworksTicker['elysium-testnet'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['elysium-testnet'],
     },
   },
   [NetworkType['linea-goerli']]: {
@@ -190,6 +207,8 @@ export const CHAIN_ID_TO_ETHERS_NETWORK_NAME_MAP: Record<
   [ChainId.goerli]: BuiltInNetworkName.Goerli,
   [ChainId.sepolia]: BuiltInNetworkName.Sepolia,
   [ChainId.mainnet]: BuiltInNetworkName.Mainnet,
+  [ChainId['elysium-mainnet']]: BuiltInNetworkName.ElysiumMainnet,
+  [ChainId['elysium-testnet']]: BuiltInNetworkName.ElysiumTestnet,
   [ChainId['linea-goerli']]: BuiltInNetworkName.LineaGoerli,
   [ChainId['linea-sepolia']]: BuiltInNetworkName.LineaSepolia,
   [ChainId['linea-mainnet']]: BuiltInNetworkName.LineaMainnet,

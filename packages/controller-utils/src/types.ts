@@ -20,6 +20,8 @@ export type InfuraNetworkType =
 export const CustomNetworkType = {
   'megaeth-testnet': 'megaeth-testnet',
   'monad-testnet': 'monad-testnet',
+  'elysium-mainnet': 'elysium-mainnet',
+  'elysium-testnet': 'elysium-testnet',
 } as const;
 export type CustomNetworkType =
   (typeof CustomNetworkType)[keyof typeof CustomNetworkType];
@@ -80,6 +82,8 @@ export enum BuiltInNetworkName {
   MegaETHTestnet = 'megaeth-testnet',
   MonadTestnet = 'monad-testnet',
   BaseMainnet = 'base-mainnet',
+  ElysiumMainnet = 'elysium-mainnet',
+  ElysiumTestnet = 'elysium-testnet',
 }
 
 /**
@@ -89,6 +93,8 @@ export enum BuiltInNetworkName {
  */
 export const ChainId = {
   [BuiltInNetworkName.Mainnet]: '0x1', // toHex(1)
+  [BuiltInNetworkName.ElysiumMainnet]: '0x53b', // toHex(1)
+  [BuiltInNetworkName.ElysiumTestnet]: '0x53a', // toHex(1)
   [BuiltInNetworkName.Goerli]: '0x5', // toHex(5)
   [BuiltInNetworkName.Sepolia]: '0xaa36a7', // toHex(11155111)
   [BuiltInNetworkName.Aurora]: '0x4e454152', // toHex(1313161554)
@@ -103,6 +109,9 @@ export type ChainId = (typeof ChainId)[keyof typeof ChainId];
 
 export enum NetworksTicker {
   mainnet = 'ETH',
+  'elysium-mainnet' = 'ELY',
+  // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
+  'elysium-testnet' = 'ELY',
   goerli = 'GoerliETH',
   sepolia = 'SepoliaETH',
   'linea-goerli' = 'LineaETH',
@@ -119,6 +128,9 @@ export enum NetworksTicker {
 
 export const BlockExplorerUrl = {
   [BuiltInNetworkName.Mainnet]: 'https://etherscan.io',
+  [BuiltInNetworkName.ElysiumMainnet]: 'https://blockscout.elysiumchain.tech/',
+  [BuiltInNetworkName.ElysiumTestnet]:
+    'https://explorer.atlantischain.network/',
   [BuiltInNetworkName.Goerli]: 'https://goerli.etherscan.io',
   [BuiltInNetworkName.Sepolia]: 'https://sepolia.etherscan.io',
   [BuiltInNetworkName.LineaGoerli]: 'https://goerli.lineascan.build',
@@ -141,6 +153,8 @@ export const NetworkNickname = {
   [BuiltInNetworkName.MegaETHTestnet]: 'Mega Testnet',
   [BuiltInNetworkName.MonadTestnet]: 'Monad Testnet',
   [BuiltInNetworkName.BaseMainnet]: 'Base Mainnet',
+  [BuiltInNetworkName.ElysiumMainnet]: 'Elysium Mainnet',
+  [BuiltInNetworkName.ElysiumTestnet]: 'Elysium Testnet',
 } as const satisfies Record<BuiltInNetworkType, string>;
 export type NetworkNickname =
   (typeof NetworkNickname)[keyof typeof NetworkNickname];
@@ -187,6 +201,7 @@ export type TraceCallback = <ReturnType>(
   /**
    * Callback to trace.
    * Thrown errors will not be caught, but the trace will still be recorded.
+   *
    * @param context - The context in which the operation is running.
    */
   fn?: (context?: TraceContext) => ReturnType,

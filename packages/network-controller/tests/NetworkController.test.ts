@@ -546,7 +546,7 @@ describe('NetworkController', () => {
       await withController(
         {
           additionalDefaultNetworks: [
-            ChainId[BuiltInNetworkName.MegaETHTestnet],
+            ChainId[BuiltInNetworkName.ElysiumMainnet],
           ],
         },
         ({ controller }) => {
