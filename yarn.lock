@@ -2824,6 +2824,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metamask/auth-network-utils@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@metamask/auth-network-utils@npm:0.3.1"
+  dependencies:
+    "@noble/curves": "npm:^1.8.1"
+    "@noble/hashes": "npm:^1.7.1"
+    "@toruslabs/bs58": "npm:^1.0.0"
+    "@toruslabs/constants": "npm:^15.0.0"
+    "@toruslabs/eccrypto": "npm:^6.1.0"
+    bn.js: "npm:^5.2.1"
+    elliptic: "npm:^6.6.1"
+    json-stable-stringify-without-jsonify: "npm:^1.0.1"
+    loglevel: "npm:^1.9.2"
+  checksum: 10/6b4f105b03e5231ae3ed448e8423cd6681e49db1be7ebe20232e0b5eee8bce08e3565dbe890837abc9158b417c65d06279b676f226c52ffc81ef5f50f6d87428
+  languageName: node
+  linkType: hard
+
 "@metamask/auto-changelog@npm:^3.4.4":
   version: 3.4.4
   resolution: "@metamask/auto-changelog@npm:3.4.4"
@@ -4341,7 +4358,7 @@ __metadata:
   dependencies:
     "@lavamoat/allow-scripts": "npm:^3.0.4"
     "@lavamoat/preinstall-always-fail": "npm:^2.1.0"
-    "@metamask/auth-network-utils": "npm:^0.3.0"
+    "@metamask/auth-network-utils": "npm:^0.3.1"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/base-controller": "npm:^8.0.1"
     "@metamask/browser-passworder": "npm:^4.3.0"
