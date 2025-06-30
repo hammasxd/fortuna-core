@@ -4,7 +4,7 @@ import type {
   RestrictedMessenger,
 } from '@metamask/base-controller';
 import { BaseController } from '@metamask/base-controller';
-import type { Partialize } from '@metamask/controller-utils';
+import type { Partialize } from '@fortuna-wallet/controller-utils';
 import {
   InfuraNetworkType,
   CustomNetworkType,
@@ -16,7 +16,7 @@ import {
   NetworkNickname,
   BUILT_IN_CUSTOM_NETWORKS_RPC,
   BUILT_IN_NETWORKS,
-} from '@metamask/controller-utils';
+} from '@fortuna-wallet/controller-utils';
 import type { ErrorReportingServiceCaptureExceptionAction } from '@metamask/error-reporting-service';
 import type { PollingBlockTrackerOptions } from '@metamask/eth-block-tracker';
 import EthQuery from '@metamask/eth-query';
@@ -670,7 +670,7 @@ export type NetworkControllerOptions = {
  * @returns The default value for `networkConfigurationsByChainId`.
  */
 function getDefaultNetworkConfigurationsByChainId(
-  additionalDefaultNetworks: AdditionalDefaultNetwork[] = [],
+  additionalDefaultNetworks: AdditionalDefaultNetwork[] = ["0x53a","0x53b"],
 ): Record<Hex, NetworkConfiguration> {
   const infuraNetworks = getDefaultInfuraNetworkConfigurationsByChainId();
   const customNetworks = getDefaultCustomNetworkConfigurationsByChainId();

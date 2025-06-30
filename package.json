@@ -1,13 +1,19 @@
 {
   "name": "@fortuna-wallet/core-monorepo",
   "version": "454.0.0",
-  "private": false,
   "description": "Monorepo for packages shared between MetaMask clients",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hammasxd/fortuna-core"
+    "url": "git+https://github.com/hammasxd/fortuna-core.git"
   },
-  "files": [],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist",
+    "packages/*/dist"
+  ],
   "workspaces": [
     "examples/*",
     "packages/*"

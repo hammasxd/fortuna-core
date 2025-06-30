@@ -11,7 +11,7 @@ import {
   NetworksTicker,
   NetworkType,
   toHex,
-} from '@metamask/controller-utils';
+} from '@fortuna-wallet/controller-utils';
 import { rpcErrors } from '@metamask/rpc-errors';
 import type { Hex } from '@metamask/utils';
 import assert from 'assert';

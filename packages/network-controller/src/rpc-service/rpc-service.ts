@@ -1,13 +1,13 @@
 import type {
   CreateServicePolicyOptions,
   ServicePolicy,
-} from '@metamask/controller-utils';
+} from '@fortuna-wallet/controller-utils';
 import {
   CircuitState,
   HttpError,
   createServicePolicy,
   handleWhen,
-} from '@metamask/controller-utils';
+} from '@fortuna-wallet/controller-utils';
 import { JsonRpcError, rpcErrors } from '@metamask/rpc-errors';
 import type { JsonRpcRequest } from '@metamask/utils';
 import {

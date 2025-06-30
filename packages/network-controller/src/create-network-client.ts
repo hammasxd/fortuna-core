@@ -1,5 +1,5 @@
-import type { InfuraNetworkType } from '@metamask/controller-utils';
-import { ChainId } from '@metamask/controller-utils';
+import type { InfuraNetworkType } from '@fortuna-wallet/controller-utils';
+import { ChainId } from '@fortuna-wallet/controller-utils';
 import type { PollingBlockTrackerOptions } from '@metamask/eth-block-tracker';
 import { PollingBlockTracker } from '@metamask/eth-block-tracker';
 import { createInfuraMiddleware } from '@metamask/eth-json-rpc-infura';

@@ -5,7 +5,7 @@ import {
   NetworkNickname,
   NetworksTicker,
   toHex,
-} from '@metamask/controller-utils';
+} from '@fortuna-wallet/controller-utils';
 import type { Hex } from '@metamask/utils';
 import { v4 as uuidV4 } from 'uuid';
 

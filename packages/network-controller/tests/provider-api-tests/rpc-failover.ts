@@ -1,4 +1,4 @@
-import { ConstantBackoff } from '@metamask/controller-utils';
+import { ConstantBackoff } from '@fortuna-wallet/controller-utils';
 import type { Hex } from '@metamask/utils';
 
 import type { MockRequest, MockResponse, ProviderType } from './helpers';

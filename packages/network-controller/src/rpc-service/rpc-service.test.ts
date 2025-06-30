@@ -1,7 +1,7 @@
 // We use conditions exclusively in this file.
 /* eslint-disable jest/no-conditional-in-test */
 
-import { HttpError } from '@metamask/controller-utils';
+import { HttpError } from '@fortuna-wallet/controller-utils';
 import { errorCodes } from '@metamask/rpc-errors';
 import nock from 'nock';
 import { FetchError } from 'node-fetch';

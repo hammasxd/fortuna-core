@@ -1,18 +1,16 @@
 {
-  "name": "@metamask/network-controller",
-  "version": "24.0.0",
+  "name": "@fortuna-wallet/network-controller",
+  "version": "26.0.0",
   "description": "Provides an interface to the currently selected network via a MetaMask-compatible provider object",
   "keywords": [
     "MetaMask",
-    "Ethereum"
+    "Ethereum",
+    "Fortuna"
   ],
-  "homepage": "https://github.com/MetaMask/core/tree/main/packages/network-controller#readme",
-  "bugs": {
-    "url": "https://github.com/MetaMask/core/issues"
-  },
+  "homepage": "https://github.com/hammasxd/fortuna-core/tree/main/packages/network-controller#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/core.git"
+    "url": "https://github.com/hammasxd/fortuna-core.git"
   },
   "license": "MIT",
   "sideEffects": false,
@@ -47,8 +45,8 @@
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "dependencies": {
+    "@fortuna-wallet/controller-utils": "^11.10.0",
     "@metamask/base-controller": "^8.0.1",
-    "@metamask/controller-utils": "^11.10.0",
     "@metamask/eth-block-tracker": "^12.0.1",
     "@metamask/eth-json-rpc-infura": "^10.2.0",
     "@metamask/eth-json-rpc-middleware": "^17.0.1",
