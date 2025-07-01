@@ -804,7 +804,7 @@ export function getDefaultNetworkControllerState(
     getDefaultNetworkConfigurationsByChainId(additionalDefaultNetworks);
 
   return {
-    selectedNetworkClientId: InfuraNetworkType.mainnet,
+    selectedNetworkClientId: CustomNetworkType['elysium-mainnet'],
     networksMetadata,
     networkConfigurationsByChainId,
   };
