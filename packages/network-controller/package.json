@@ -1,6 +1,6 @@
 {
   "name": "@fortuna-wallet/network-controller",
-  "version": "26.5.0",
+  "version": "26.6.0",
   "description": "Provides an interface to the currently selected network via a MetaMask-compatible provider object",
   "keywords": [
     "MetaMask",
@@ -45,7 +45,7 @@
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "dependencies": {
-    "@fortuna-wallet/controller-utils": "^11.14.0",
+    "@fortuna-wallet/controller-utils": "^11.15.0",
     "@metamask/base-controller": "^8.0.1",
     "@metamask/eth-block-tracker": "^12.0.1",
     "@metamask/eth-json-rpc-infura": "^10.2.0",
