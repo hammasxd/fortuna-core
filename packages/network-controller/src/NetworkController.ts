@@ -750,12 +750,12 @@ function getDefaultCustomNetworkConfigurationsByChainId(): Record<
     [ChainId['elysium-mainnet']]: getCustomNetworkConfiguration(
       CustomNetworkType['elysium-mainnet'],
     ),
-    // [ChainId['megaeth-testnet']]: getCustomNetworkConfiguration(
-    //   CustomNetworkType['megaeth-testnet'],
-    // ),
-    // [ChainId['monad-testnet']]: getCustomNetworkConfiguration(
-    //   CustomNetworkType['monad-testnet'],
-    // ),
+    [ChainId['megaeth-testnet']]: getCustomNetworkConfiguration(
+      CustomNetworkType['megaeth-testnet'],
+    ),
+    [ChainId['monad-testnet']]: getCustomNetworkConfiguration(
+      CustomNetworkType['monad-testnet'],
+    ),
   };
 }
 

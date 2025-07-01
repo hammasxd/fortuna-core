@@ -45,11 +45,11 @@ export const ASSET_TYPES = {
 
 // TICKER SYMBOLS
 export const TESTNET_TICKER_SYMBOLS = {
-  // GOERLI: 'GoerliETH',
-  // SEPOLIA: 'SepoliaETH',
-  // LINEA_GOERLI: 'LineaETH',
-  // LINEA_SEPOLIA: 'LineaETH',
-  // MEGAETH_TESTNET: 'MegaETH',
+  GOERLI: 'GoerliETH',
+  SEPOLIA: 'SepoliaETH',
+  LINEA_GOERLI: 'LineaETH',
+  LINEA_SEPOLIA: 'LineaETH',
+  MEGAETH_TESTNET: 'MegaETH',
   ELYSIUM_TESTNET: 'ELY',
 };
 
@@ -60,9 +60,9 @@ export const BUILT_IN_CUSTOM_NETWORKS_RPC = {
   /**
    * @deprecated Please use `megaeth-testnet` instead.
    */
-  // MEGAETH_TESTNET: 'https://carrot.megaeth.com/rpc',
-  // 'megaeth-testnet': 'https://carrot.megaeth.com/rpc',
-  // 'monad-testnet': 'https://testnet-rpc.monad.xyz',
+  MEGAETH_TESTNET: 'https://carrot.megaeth.com/rpc',
+  'megaeth-testnet': 'https://carrot.megaeth.com/rpc',
+  'monad-testnet': 'https://testnet-rpc.monad.xyz',
   'elysium-mainnet': 'https://rpc.elysiumchain.us/',
   'elysium-testnet': 'https://rpc.atlantischain.network/',
 };
@@ -71,20 +71,20 @@ export const BUILT_IN_CUSTOM_NETWORKS_RPC = {
  * Map of all build-in Infura networks to their network, ticker and chain IDs.
  */
 export const BUILT_IN_NETWORKS = {
-  // [NetworkType.goerli]: {
-  //   chainId: ChainId.goerli,
-  //   ticker: NetworksTicker.goerli,
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl.goerli,
-  //   },
-  // },
-  // [NetworkType.sepolia]: {
-  //   chainId: ChainId.sepolia,
-  //   ticker: NetworksTicker.sepolia,
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl.sepolia,
-  //   },
-  // },
+  [NetworkType.goerli]: {
+    chainId: ChainId.goerli,
+    ticker: NetworksTicker.goerli,
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl.goerli,
+    },
+  },
+  [NetworkType.sepolia]: {
+    chainId: ChainId.sepolia,
+    ticker: NetworksTicker.sepolia,
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl.sepolia,
+    },
+  },
   [NetworkType.mainnet]: {
     chainId: ChainId.mainnet,
     ticker: NetworksTicker.mainnet,
@@ -106,48 +106,48 @@ export const BUILT_IN_NETWORKS = {
       blockExplorerUrl: BlockExplorerUrl['elysium-testnet'],
     },
   },
-  // [NetworkType['linea-goerli']]: {
-  //   chainId: ChainId['linea-goerli'],
-  //   ticker: NetworksTicker['linea-goerli'],
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl['linea-goerli'],
-  //   },
-  // },
-  // [NetworkType['linea-sepolia']]: {
-  //   chainId: ChainId['linea-sepolia'],
-  //   ticker: NetworksTicker['linea-sepolia'],
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl['linea-sepolia'],
-  //   },
-  // },
-  // [NetworkType['linea-mainnet']]: {
-  //   chainId: ChainId['linea-mainnet'],
-  //   ticker: NetworksTicker['linea-mainnet'],
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl['linea-mainnet'],
-  //   },
-  // },
-  // [NetworkType['megaeth-testnet']]: {
-  //   chainId: ChainId['megaeth-testnet'],
-  //   ticker: NetworksTicker['megaeth-testnet'],
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl['megaeth-testnet'],
-  //   },
-  // },
-  // [NetworkType['monad-testnet']]: {
-  //   chainId: ChainId['monad-testnet'],
-  //   ticker: NetworksTicker['monad-testnet'],
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl['monad-testnet'],
-  //   },
-  // },
-  // [NetworkType['base-mainnet']]: {
-  //   chainId: ChainId['base-mainnet'],
-  //   ticker: NetworksTicker['base-mainnet'],
-  //   rpcPrefs: {
-  //     blockExplorerUrl: BlockExplorerUrl['base-mainnet'],
-  //   },
-  // },
+  [NetworkType['linea-goerli']]: {
+    chainId: ChainId['linea-goerli'],
+    ticker: NetworksTicker['linea-goerli'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['linea-goerli'],
+    },
+  },
+  [NetworkType['linea-sepolia']]: {
+    chainId: ChainId['linea-sepolia'],
+    ticker: NetworksTicker['linea-sepolia'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['linea-sepolia'],
+    },
+  },
+  [NetworkType['linea-mainnet']]: {
+    chainId: ChainId['linea-mainnet'],
+    ticker: NetworksTicker['linea-mainnet'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['linea-mainnet'],
+    },
+  },
+  [NetworkType['megaeth-testnet']]: {
+    chainId: ChainId['megaeth-testnet'],
+    ticker: NetworksTicker['megaeth-testnet'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['megaeth-testnet'],
+    },
+  },
+  [NetworkType['monad-testnet']]: {
+    chainId: ChainId['monad-testnet'],
+    ticker: NetworksTicker['monad-testnet'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['monad-testnet'],
+    },
+  },
+  [NetworkType['base-mainnet']]: {
+    chainId: ChainId['base-mainnet'],
+    ticker: NetworksTicker['base-mainnet'],
+    rpcPrefs: {
+      blockExplorerUrl: BlockExplorerUrl['base-mainnet'],
+    },
+  },
   [NetworkType.rpc]: {
     chainId: undefined,
     blockExplorerUrl: undefined,
@@ -204,15 +204,15 @@ export const CHAIN_ID_TO_ETHERS_NETWORK_NAME_MAP: Record<
   string,
   BuiltInNetworkName
 > = {
-  // [ChainId.goerli]: BuiltInNetworkName.Goerli,
-  // [ChainId.sepolia]: BuiltInNetworkName.Sepolia,
+  [ChainId.goerli]: BuiltInNetworkName.Goerli,
+  [ChainId.sepolia]: BuiltInNetworkName.Sepolia,
   [ChainId.mainnet]: BuiltInNetworkName.Mainnet,
   [ChainId['elysium-mainnet']]: BuiltInNetworkName.ElysiumMainnet,
   [ChainId['elysium-testnet']]: BuiltInNetworkName.ElysiumTestnet,
-  // [ChainId['linea-goerli']]: BuiltInNetworkName.LineaGoerli,
-  // [ChainId['linea-sepolia']]: BuiltInNetworkName.LineaSepolia,
-  // [ChainId['linea-mainnet']]: BuiltInNetworkName.LineaMainnet,
-  // [ChainId.aurora]: BuiltInNetworkName.Aurora,
+  [ChainId['linea-goerli']]: BuiltInNetworkName.LineaGoerli,
+  [ChainId['linea-sepolia']]: BuiltInNetworkName.LineaSepolia,
+  [ChainId['linea-mainnet']]: BuiltInNetworkName.LineaMainnet,
+  [ChainId.aurora]: BuiltInNetworkName.Aurora,
 };
 
 /**

@@ -3,12 +3,12 @@
  */
 export const InfuraNetworkType = {
   mainnet: 'mainnet',
-  // goerli: 'goerli',
-  // sepolia: 'sepolia',
-  // 'linea-goerli': 'linea-goerli',
-  // 'linea-sepolia': 'linea-sepolia',
-  // 'linea-mainnet': 'linea-mainnet',
-  // 'base-mainnet': 'base-mainnet',
+  goerli: 'goerli',
+  sepolia: 'sepolia',
+  'linea-goerli': 'linea-goerli',
+  'linea-sepolia': 'linea-sepolia',
+  'linea-mainnet': 'linea-mainnet',
+  'base-mainnet': 'base-mainnet',
 } as const;
 
 export type InfuraNetworkType =
@@ -18,8 +18,8 @@ export type InfuraNetworkType =
  * Custom network types that are not part of Infura.
  */
 export const CustomNetworkType = {
-  // 'megaeth-testnet': 'megaeth-testnet',
-  // 'monad-testnet': 'monad-testnet',
+  'megaeth-testnet': 'megaeth-testnet',
+  'monad-testnet': 'monad-testnet',
   'elysium-mainnet': 'elysium-mainnet',
   'elysium-testnet': 'elysium-testnet',
 } as const;
@@ -73,15 +73,15 @@ export function isInfuraNetworkType(
  */
 export enum BuiltInNetworkName {
   Mainnet = 'mainnet',
-  // Goerli = 'goerli',
-  // Sepolia = 'sepolia',
-  // LineaGoerli = 'linea-goerli',
-  // LineaSepolia = 'linea-sepolia',
-  // LineaMainnet = 'linea-mainnet',
-  // Aurora = 'aurora',
-  // MegaETHTestnet = 'megaeth-testnet',
-  // MonadTestnet = 'monad-testnet',
-  // BaseMainnet = 'base-mainnet',
+  Goerli = 'goerli',
+  Sepolia = 'sepolia',
+  LineaGoerli = 'linea-goerli',
+  LineaSepolia = 'linea-sepolia',
+  LineaMainnet = 'linea-mainnet',
+  Aurora = 'aurora',
+  MegaETHTestnet = 'megaeth-testnet',
+  MonadTestnet = 'monad-testnet',
+  BaseMainnet = 'base-mainnet',
   ElysiumMainnet = 'elysium-mainnet',
   ElysiumTestnet = 'elysium-testnet',
 }
@@ -95,15 +95,15 @@ export const ChainId = {
   [BuiltInNetworkName.Mainnet]: '0x1', // toHex(1)
   [BuiltInNetworkName.ElysiumMainnet]: '0x53b', // toHex(1)
   [BuiltInNetworkName.ElysiumTestnet]: '0x53a', // toHex(1)
-  // [BuiltInNetworkName.Goerli]: '0x5', // toHex(5)
-  // [BuiltInNetworkName.Sepolia]: '0xaa36a7', // toHex(11155111)
-  // [BuiltInNetworkName.Aurora]: '0x4e454152', // toHex(1313161554)
-  // [BuiltInNetworkName.LineaGoerli]: '0xe704', // toHex(59140)
-  // [BuiltInNetworkName.LineaSepolia]: '0xe705', // toHex(59141)
-  // [BuiltInNetworkName.LineaMainnet]: '0xe708', // toHex(59144)
-  // [BuiltInNetworkName.MegaETHTestnet]: '0x18c6', // toHex(6342)
-  // [BuiltInNetworkName.MonadTestnet]: '0x279f', // toHex(10143)
-  // [BuiltInNetworkName.BaseMainnet]: '0x2105', // toHex(8453)
+  [BuiltInNetworkName.Goerli]: '0x5', // toHex(5)
+  [BuiltInNetworkName.Sepolia]: '0xaa36a7', // toHex(11155111)
+  [BuiltInNetworkName.Aurora]: '0x4e454152', // toHex(1313161554)
+  [BuiltInNetworkName.LineaGoerli]: '0xe704', // toHex(59140)
+  [BuiltInNetworkName.LineaSepolia]: '0xe705', // toHex(59141)
+  [BuiltInNetworkName.LineaMainnet]: '0xe708', // toHex(59144)
+  [BuiltInNetworkName.MegaETHTestnet]: '0x18c6', // toHex(6342)
+  [BuiltInNetworkName.MonadTestnet]: '0x279f', // toHex(10143)
+  [BuiltInNetworkName.BaseMainnet]: '0x2105', // toHex(8453)
 } as const;
 export type ChainId = (typeof ChainId)[keyof typeof ChainId];
 
@@ -112,17 +112,17 @@ export enum NetworksTicker {
   'elysium-mainnet' = 'ELY',
   // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
   'elysium-testnet' = 'ELY',
-  // goerli = 'GoerliETH',
-  // sepolia = 'SepoliaETH',
-  // 'linea-goerli' = 'LineaETH',
-  // // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
-  // 'linea-sepolia' = 'LineaETH',
-  // // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
-  // 'linea-mainnet' = 'ETH',
-  // 'megaeth-testnet' = 'MegaETH',
-  // 'monad-testnet' = 'MON',
-  // // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
-  // 'base-mainnet' = 'ETH',
+  goerli = 'GoerliETH',
+  sepolia = 'SepoliaETH',
+  'linea-goerli' = 'LineaETH',
+  // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
+  'linea-sepolia' = 'LineaETH',
+  // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
+  'linea-mainnet' = 'ETH',
+  'megaeth-testnet' = 'MegaETH',
+  'monad-testnet' = 'MON',
+  // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
+  'base-mainnet' = 'ETH',
   rpc = '',
 }
 
@@ -131,28 +131,28 @@ export const BlockExplorerUrl = {
   [BuiltInNetworkName.ElysiumMainnet]: 'https://blockscout.elysiumchain.tech/',
   [BuiltInNetworkName.ElysiumTestnet]:
     'https://explorer.atlantischain.network/',
-  // [BuiltInNetworkName.Goerli]: 'https://goerli.etherscan.io',
-  // [BuiltInNetworkName.Sepolia]: 'https://sepolia.etherscan.io',
-  // [BuiltInNetworkName.LineaGoerli]: 'https://goerli.lineascan.build',
-  // [BuiltInNetworkName.LineaSepolia]: 'https://sepolia.lineascan.build',
-  // [BuiltInNetworkName.LineaMainnet]: 'https://lineascan.build',
-  // [BuiltInNetworkName.MegaETHTestnet]: 'https://megaexplorer.xyz',
-  // [BuiltInNetworkName.MonadTestnet]: 'https://testnet.monadexplorer.com',
-  // [BuiltInNetworkName.BaseMainnet]: 'https://basescan.org',
+  [BuiltInNetworkName.Goerli]: 'https://goerli.etherscan.io',
+  [BuiltInNetworkName.Sepolia]: 'https://sepolia.etherscan.io',
+  [BuiltInNetworkName.LineaGoerli]: 'https://goerli.lineascan.build',
+  [BuiltInNetworkName.LineaSepolia]: 'https://sepolia.lineascan.build',
+  [BuiltInNetworkName.LineaMainnet]: 'https://lineascan.build',
+  [BuiltInNetworkName.MegaETHTestnet]: 'https://megaexplorer.xyz',
+  [BuiltInNetworkName.MonadTestnet]: 'https://testnet.monadexplorer.com',
+  [BuiltInNetworkName.BaseMainnet]: 'https://basescan.org',
 } as const satisfies Record<BuiltInNetworkType, string>;
 export type BlockExplorerUrl =
   (typeof BlockExplorerUrl)[keyof typeof BlockExplorerUrl];
 
 export const NetworkNickname = {
   [BuiltInNetworkName.Mainnet]: 'Ethereum Mainnet',
-  // [BuiltInNetworkName.Goerli]: 'Goerli',
-  // [BuiltInNetworkName.Sepolia]: 'Sepolia',
-  // [BuiltInNetworkName.LineaGoerli]: 'Linea Goerli',
-  // [BuiltInNetworkName.LineaSepolia]: 'Linea Sepolia',
-  // [BuiltInNetworkName.LineaMainnet]: 'Linea',
-  // [BuiltInNetworkName.MegaETHTestnet]: 'Mega Testnet',
-  // [BuiltInNetworkName.MonadTestnet]: 'Monad Testnet',
-  // [BuiltInNetworkName.BaseMainnet]: 'Base Mainnet',
+  [BuiltInNetworkName.Goerli]: 'Goerli',
+  [BuiltInNetworkName.Sepolia]: 'Sepolia',
+  [BuiltInNetworkName.LineaGoerli]: 'Linea Goerli',
+  [BuiltInNetworkName.LineaSepolia]: 'Linea Sepolia',
+  [BuiltInNetworkName.LineaMainnet]: 'Linea',
+  [BuiltInNetworkName.MegaETHTestnet]: 'Mega Testnet',
+  [BuiltInNetworkName.MonadTestnet]: 'Monad Testnet',
+  [BuiltInNetworkName.BaseMainnet]: 'Base Mainnet',
   [BuiltInNetworkName.ElysiumMainnet]: 'Elysium Mainnet',
   [BuiltInNetworkName.ElysiumTestnet]: 'Elysium Testnet',
 } as const satisfies Record<BuiltInNetworkType, string>;
