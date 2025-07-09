@@ -4045,12 +4045,12 @@ __metadata:
   linkType: hard
 
 "@metamask/obs-store@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@metamask/obs-store@npm:9.0.0"
+  version: 9.1.0
+  resolution: "@metamask/obs-store@npm:9.1.0"
   dependencies:
     "@metamask/safe-event-emitter": "npm:^3.0.0"
     readable-stream: "npm:^3.6.2"
-  checksum: 10/1c202a5bbdc79a6b8b3fba946c09dc5521e87260956d30db6543e7bf3d95bd44ebd958f509e3e7332041845176487fe78d3b40bdedbc213061ba849fd978e468
+  checksum: 10/fa37a0b9e1e25f54c93a8f16449b3fc771c15b70d79d590cf41e22f871a19d673bcfd0d08b044093235d10d0bb031b47b8209d89997def0cb256abe3e371064f
   languageName: node
   linkType: hard
 
