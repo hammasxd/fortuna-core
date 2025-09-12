@@ -1810,7 +1810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortuna-wallet/controller-utils@npm:^11.10.0, @fortuna-wallet/controller-utils@workspace:packages/controller-utils":
+"@fortuna-wallet/controller-utils@npm:^11.15.1, @fortuna-wallet/controller-utils@workspace:packages/controller-utils":
   version: 0.0.0-use.local
   resolution: "@fortuna-wallet/controller-utils@workspace:packages/controller-utils"
   dependencies:
@@ -1906,7 +1906,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fortuna-wallet/network-controller@workspace:packages/network-controller"
   dependencies:
-    "@fortuna-wallet/controller-utils": "npm:^11.10.0"
+    "@fortuna-wallet/controller-utils": "npm:^11.15.1"
     "@json-rpc-specification/meta-schema": "npm:^1.0.6"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/base-controller": "npm:^8.0.1"
@@ -3283,17 +3283,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/eth-hd-keyring@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@metamask/eth-hd-keyring@npm:12.0.0"
+"@metamask/eth-hd-keyring@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "@metamask/eth-hd-keyring@npm:13.0.0"
   dependencies:
     "@ethereumjs/util": "npm:^9.1.0"
     "@metamask/eth-sig-util": "npm:^8.2.0"
     "@metamask/key-tree": "npm:^10.0.2"
+    "@metamask/keyring-utils": "npm:^3.1.0"
     "@metamask/scure-bip39": "npm:^2.1.1"
     "@metamask/utils": "npm:^11.1.0"
     ethereum-cryptography: "npm:^2.1.2"
-  checksum: 10/9567238a11c0e3a331a477fbe6ad5ee42b10bb943efdff9696bf178127b9d5aac2ce02295221fa19d18981231251ee25053034b7780495e2c2fc7427c5c02516
+  checksum: 10/fe955a4e0331090df8110dbd8f46ea6286c2ad20e6677ecf535361ea9d0008194b2043eddd692cd7ceac2e033a54e4e340caa7d302bd5211826cb252b526f6bc
   languageName: node
   linkType: hard
 
@@ -3712,7 +3713,7 @@ __metadata:
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/base-controller": "npm:^8.0.1"
     "@metamask/browser-passworder": "npm:^4.3.0"
-    "@metamask/eth-hd-keyring": "npm:^12.0.0"
+    "@metamask/eth-hd-keyring": "npm:^13.0.0"
     "@metamask/eth-sig-util": "npm:^8.2.0"
     "@metamask/eth-simple-keyring": "npm:^10.0.0"
     "@metamask/keyring-api": "npm:^18.0.0"
@@ -3787,6 +3788,18 @@ __metadata:
     "@metamask/utils": "npm:^11.1.0"
     bitcoin-address-validation: "npm:^2.2.3"
   checksum: 10/eff3c0b9a86d6a25c5dd443946ba3ff56cb94fcb915a4eb061089819805e1e78eba2ea5cfb12a47ec4606542870c417de422f755947389ab9f3a4f08e96742db
+  languageName: node
+  linkType: hard
+
+"@metamask/keyring-utils@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@metamask/keyring-utils@npm:3.1.0"
+  dependencies:
+    "@ethereumjs/tx": "npm:^5.4.0"
+    "@metamask/superstruct": "npm:^3.1.0"
+    "@metamask/utils": "npm:^11.1.0"
+    bitcoin-address-validation: "npm:^2.2.3"
+  checksum: 10/d7325bb72e47bd3d81b1bce55203d8343408c0d37dd2862203c21bb68c6a1e32a1cfa7ca46a4f6fe1f14e757084bbc45db8db3eedbefc90ce81805ce22d335e8
   languageName: node
   linkType: hard
 
