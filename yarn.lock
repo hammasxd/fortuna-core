@@ -1810,7 +1810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortuna-wallet/controller-utils@npm:^11.10.0, @fortuna-wallet/controller-utils@workspace:packages/controller-utils":
+"@fortuna-wallet/controller-utils@npm:^11.15.1, @fortuna-wallet/controller-utils@workspace:packages/controller-utils":
   version: 0.0.0-use.local
   resolution: "@fortuna-wallet/controller-utils@workspace:packages/controller-utils"
   dependencies:
@@ -1906,7 +1906,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fortuna-wallet/network-controller@workspace:packages/network-controller"
   dependencies:
-    "@fortuna-wallet/controller-utils": "npm:^11.10.0"
+    "@fortuna-wallet/controller-utils": "npm:^11.15.1"
     "@json-rpc-specification/meta-schema": "npm:^1.0.6"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/base-controller": "npm:^8.0.1"
@@ -2821,6 +2821,23 @@ __metadata:
     json-stable-stringify: "npm:^1.2.1"
     loglevel: "npm:^1.9.2"
   checksum: 10/6239dd540cd289ef3a3d8ba2456c3968a1c25bf8b6c73459221da52cf34ce6e61922ad910434de5ccd7ab99443165f2f8bc53aff337f660124c4c65c0d6d05ff
+  languageName: node
+  linkType: hard
+
+"@metamask/auth-network-utils@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@metamask/auth-network-utils@npm:0.4.0"
+  dependencies:
+    "@noble/curves": "npm:^1.8.1"
+    "@noble/hashes": "npm:^1.7.1"
+    "@toruslabs/bs58": "npm:^1.0.0"
+    "@toruslabs/constants": "npm:^15.0.0"
+    "@toruslabs/eccrypto": "npm:^6.2.0"
+    bn.js: "npm:^5.2.2"
+    elliptic: "npm:^6.6.1"
+    json-stable-stringify-without-jsonify: "npm:^1.0.1"
+    loglevel: "npm:^1.9.2"
+  checksum: 10/db528a23607dc010c0c6ab94cd1d7042041cabbb0f3ca0e11745f23dcdb733d79b72ed1ca16733d96a97aa953c8af8a5c190f2287c2131862cccb2a9991a9006
   languageName: node
   linkType: hard
 
@@ -4341,7 +4358,7 @@ __metadata:
   dependencies:
     "@lavamoat/allow-scripts": "npm:^3.0.4"
     "@lavamoat/preinstall-always-fail": "npm:^2.1.0"
-    "@metamask/auth-network-utils": "npm:^0.3.0"
+    "@metamask/auth-network-utils": "npm:^0.4.0"
     "@metamask/auto-changelog": "npm:^3.4.4"
     "@metamask/base-controller": "npm:^8.0.1"
     "@metamask/browser-passworder": "npm:^4.3.0"
@@ -5342,6 +5359,15 @@ __metadata:
   dependencies:
     elliptic: "npm:^6.6.1"
   checksum: 10/8f79621ec4bd712eb12e70c0385353aa70221fe2b501ee674718c74a4147f82ede3ff38a045254b9da4bc9a5d1f891b87025904b7de8f6b8962791681ee65837
+  languageName: node
+  linkType: hard
+
+"@toruslabs/eccrypto@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "@toruslabs/eccrypto@npm:6.2.0"
+  dependencies:
+    elliptic: "npm:^6.6.1"
+  checksum: 10/58da3aa5128c29dda8ccd4b643b6f3d31a19fb25dec555d4016f801a9680502bbce9715aa1ebd7ab4aa1c1e7b7cf46979c9cb6ccd14bcf104f4278d994c01d09
   languageName: node
   linkType: hard
 
@@ -7244,6 +7270,13 @@ __metadata:
   version: 4.12.0
   resolution: "bn.js@npm:4.12.0"
   checksum: 10/10f8db196d3da5adfc3207d35d0a42aa29033eb33685f20ba2c36cadfe2de63dad05df0a20ab5aae01b418d1c4b3d4d205273085262fa020d17e93ff32b67527
+  languageName: node
+  linkType: hard
+
+"bn.js@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "bn.js@npm:5.2.2"
+  checksum: 10/51ebb2df83b33e5d8581165206e260d5e9c873752954616e5bf3758952b84d7399a9c6d00852815a0aeefb1150a7f34451b62d4287342d457fa432eee869e83e
   languageName: node
   linkType: hard
 
